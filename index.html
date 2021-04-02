@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <head>
+        <style type="text/css">
+            header {
+                margin: 0;
+                padding: 0;
+            }
+            footer {
+                background-color: #f2f2f2;
+            }
+        </style>
         <meta charset="utf-8">
         <title>Google</title>
     </head>
@@ -9,13 +19,16 @@
             <a href="#">About</a>
             <a href="#">Store</a>
         </header>
-        <main>
+        <main style="text-align: center;">
             <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
-            <!--serach bar-->
-            <div>
-                <button>Google Search</button>
-                <button>I'm Feeling Lucky</button>
-            </div>
+            <form>
+                <span class="material-icons-outlined">search</span>
+                    <input type="text" required placeholder>
+                <div>
+                    <button>Google Search</button>
+                    <button>I'm Feeling Lucky</button>
+                </div>
+            </form>
         </main>
         <footer>
             <a href="#">Adverising</a>
