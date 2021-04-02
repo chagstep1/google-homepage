@@ -3,9 +3,21 @@
  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <head>
         <style type="text/css">
-            header {
+            header ul {
+                list-style-type: none;
                 margin: 0;
                 padding: 0;
+                display: fixed;
+                bottom: 0px;
+            }
+            header ul li {
+                display: inline;
+            }
+            .left {
+                float: left;
+            }
+            .right {
+                float: right;
             }
             footer {
                 background-color: #f2f2f2;
@@ -16,8 +28,16 @@
     </head>
     <body>
         <header>
-            <a href="#">About</a>
-            <a href="#">Store</a>
+            <ul class="left">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Store</a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#">REPLACE ME</a></li>
+                <li><button style="background-color: blue; color: white;">Sign in</button></li>
+            </ul>
         </header>
         <main style="text-align: center;">
             <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
